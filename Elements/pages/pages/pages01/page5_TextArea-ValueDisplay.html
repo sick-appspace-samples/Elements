@@ -1,0 +1,153 @@
+<layout-row id="RowLayout1">
+			<layout-column id="ColumnLayout8">
+		<layout-row id="RowLayout2">
+			<layout-column id="ColumnLayout1" style="align-items:flex-end">
+		<davinci-text-area id="TextArea1" label="Label">
+	</davinci-text-area>
+		<davinci-text-area id="TextArea2" label="Label" placeholder="Placeholder">
+		</davinci-text-area>
+		<davinci-text-area id="TextArea3" label="Label" required value="Required field">
+		</davinci-text-area>
+		
+		
+		
+	</layout-column>
+			<layout-column id="ColumnLayout2">
+		<davinci-text-area id="TextArea4" label="Label" placeholder="disabled" disabled>
+		</davinci-text-area>
+		<davinci-text-area id="TextArea5" label="Label" placeholder="readonly" readonly>
+		</davinci-text-area>
+		<davinci-text-area id="TextArea6" label="Label" multiline placeholder="Multiline">
+		</davinci-text-area>
+	</layout-column>
+			<layout-column id="ColumnLayout5">
+		<davinci-text-field id="TextField1" type="text" label="Label">
+	</davinci-text-field>
+		<davinci-text-field id="TextField2" type="text" label="Label" placeholder="Placeholder">
+		</davinci-text-field>
+		<davinci-text-field id="TextField3" type="text" label="Label" required placeholder="Required field">
+		</davinci-text-field>
+		<davinci-text-field id="TextField4" type="text" label="Label" disabled placeholder="disabled">
+		</davinci-text-field>
+		
+		
+		
+	</layout-column>
+			<layout-column id="ColumnLayout6">
+		<davinci-text-field id="TextField5" type="text" label="Label" placeholder="readonly" readonly>
+		</davinci-text-field>
+		<davinci-text-field id="TextField6" type="password" label="Textfield type password" value="Type: password">
+		</davinci-text-field>
+		<davinci-text-field id="TextField7" type="text" label="Label" placeholder="error property nonempty" error="yes">
+		</davinci-text-field>
+		<davinci-text-field id="TextField8" type="text" label="Label" placeholder="warning not empty" warning="something">
+		</davinci-text-field>
+	</layout-column>
+			<layout-column id="ColumnLayout3">
+								<h6 id="Heading63">ToggleGroup: Buttons</h6>
+		<davinci-toggle-group id="ToggleGroup2">
+			<davinci-button id="Button1" type="primary" icon-position="append" value="Button1">
+				<span>Button1</span>
+			</davinci-button>
+			<davinci-button id="Button2" type="primary" icon-position="append" value="Button2">
+				<span>Button2</span>
+			</davinci-button>
+			<davinci-button id="Button3" type="primary" icon-position="append" value="Button3">
+				<span>Button3</span>
+			</davinci-button>
+		</davinci-toggle-group>
+		<h6 id="Heading61">ToggleGroup: Radiobuttons</h6>
+		<davinci-toggle-group id="ToggleGroup1">
+      <local-binding event="change" name="toggleValueChanged"></local-binding>
+			<davinci-radio-button id="RadioButton1" value="RadioButton1">
+				<span>RadioButton1</span>
+			</davinci-radio-button>
+						<davinci-radio-button id="RadioButton3" value="RadioButton2">
+				<span>RadioButton2</span>
+			</davinci-radio-button>
+			<davinci-radio-button id="RadioButton2" value="RadioButton3">
+				<span>RadioButton3</span>
+			</davinci-radio-button>
+		</davinci-toggle-group>
+		
+				<h6 id="Heading62">selected toggle group element (radiobuttons)</h6>
+		<davinci-value-display id="ValueDisplay1">
+      <local-binding property="value" name="toggleValueChanged" init="noToggleValue"></local-binding>
+		</davinci-value-display>
+	</layout-column>
+			<layout-column id="ColumnLayout4">
+		<h6 id="Heading64">ToggleGroup: ToggleSwitches</h6>
+		<davinci-toggle-group id="ToggleGroup3">
+			<davinci-toggle-switch id="ToggleSwitch1" tabindex="0" value="1">
+			</davinci-toggle-switch>
+						<davinci-toggle-switch id="ToggleSwitch2" tabindex="0" value="2">
+			</davinci-toggle-switch>
+			<davinci-toggle-switch id="ToggleSwitch3" tabindex="0" value="3" icon-on="action/visibility" icon-off="action/visibility_off">
+			</davinci-toggle-switch>
+		</davinci-toggle-group>
+				<h6 id="Heading65">ToggleGroup: Checkboxes</h6>
+		<davinci-toggle-group id="ToggleGroup4">
+			<davinci-checkbox id="Checkbox1" value="Checkbox1">
+				<span>Checkbox1</span>
+			</davinci-checkbox>
+			<davinci-checkbox id="Checkbox2" value="Checkbox2">
+				<span>Checkbox2</span>
+			</davinci-checkbox>
+			<davinci-checkbox id="Checkbox3" value="Checkbox3">
+				<span>Checkbox3</span>
+			</davinci-checkbox>
+		</davinci-toggle-group>
+				<h6 id="Heading66">ToggleGroup: Mixed</h6>
+		<davinci-toggle-group id="ToggleGroup5">
+			<davinci-button id="Button4" type="primary" icon-position="append" value="1">
+				<span>Button</span>
+			</davinci-button>
+			<davinci-checkbox id="Checkbox4" value="2">
+				<span>Checkbox</span>
+			</davinci-checkbox>
+			<davinci-radio-button id="RadioButton4" value="3">
+				<span>RadioButton</span>
+			</davinci-radio-button>
+			<davinci-toggle-switch id="ToggleSwitch4" tabindex="0" value="4">
+			</davinci-toggle-switch>
+		</davinci-toggle-group>
+	</layout-column>
+		</layout-row>
+		<layout-row id="RowLayout3">
+			<layout-column id="ColumnLayout7">
+						<h6 id="Heading67">Value display possibilities</h6>
+				<davinci-value-display label="Short Text" value="Hello World!"></davinci-value-display>
+		<davinci-value-display label="Long Text"
+      value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.">
+    </davinci-value-display>
+		<davinci-value-display label="Label with value" value="Lorem ipsum dolor sit amet, ..."></davinci-value-display>
+		<davinci-value-display label="Label / Value / Unit" value="50" unit="m"></davinci-value-display>
+		<davinci-value-display label="Label only"></davinci-value-display>
+	</layout-column>
+		</layout-row>
+		
+	</layout-column>
+	
+	
+		
+		
+	
+			
+	
+	
+	
+	  
+    	
+	
+  
+    
+  
+    
+  
+    
+  
+    
+	
+	
+  
+</layout-row>

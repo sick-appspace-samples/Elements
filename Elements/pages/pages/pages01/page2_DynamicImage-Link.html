@@ -1,0 +1,39 @@
+<layout-row id="RowLayout1">
+	<curie-image id="DynamicImage1">
+		<crown-binding property="data" name="Elements/getPNGImageBase64" path="result/data/Return1" auto-update="0" update-on-resume></crown-binding>
+	</curie-image>
+	
+	<curie-table id="DynamicTable1" style="width:50%">
+		<curie-table-column id="DynamicTableColumn1" header="Column1">
+		</curie-table-column>
+		<curie-table-column id="DynamicTableColumn2" header="Column2" filter>
+		</curie-table-column>
+		<curie-table-column id="DynamicTableColumn3" header="Column3" sortable>
+		</curie-table-column>
+		<crown-binding property="data" name="Elements/getDynamicTableData" path="result/data/return1" auto-update="0" update-on-resume></crown-binding>
+	</curie-table>
+	<appspace-file-download-button id="FileDownloadButton1" downloaded-filename="file.tmp">File Download</appspace-file-download-button>
+	
+	
+	
+	
+	<appspace-file-upload-button id="FileUploadButton1">File Upload</appspace-file-upload-button>
+	<davinci-icon id="Icon1" icon="action/delete">
+	</davinci-icon>
+	<layout-column id="ColumnLayout1">
+				<davinci-link id="Link1" icon-position="append" href="https://supportportal.sick.com/tutorial/ui-builder2-elements/">
+			<span>I am a link!</span>
+		</davinci-link>
+		<davinci-link id="Link2" icon-position="append" href="https://supportportal.sick.com/tutorial/ui-builder2-elements/" inverted>
+			<span>I am a link, but inverted!</span>
+		</davinci-link>
+				
+				<davinci-link id="Link3" icon-position="append" disabled href="https://supportportal.sick.com/tutorial/ui-builder2-elements/">
+			<span>I am a disabled link</span>
+		</davinci-link>
+		<davinci-link id="Link4" icon-position="append" icon="action/favorite" href="https://supportportal.sick.com/tutorial/ui-builder2-elements/">
+			<span>That's my favorite page!</span>
+		</davinci-link>
+	</layout-column>
+  
+</layout-row>

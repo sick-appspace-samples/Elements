@@ -1,0 +1,64 @@
+<layout-row id="RowLayout1" style="flex-wrap:wrap">
+	<davinci-auto-suggest id="AutoSuggest1" min-length="1" data='["Birch", "Maple", "Pine"]'>
+	</davinci-auto-suggest>
+	<davinci-button id="Button1" type="primary" icon-position="append">
+		<span>Click me</span>
+	</davinci-button>
+		<layout-column id="ColumnLayout1" style="align-items:stretch">
+		<davinci-callout id="Callout1" type="info">
+		<span>I am useful information!</span>
+	</davinci-callout>
+				<davinci-callout id="Callout3" type="warning">
+			<span>I am a warning</span>
+		</davinci-callout>
+				<davinci-callout id="Callout4" type="error">
+			<span>There was an error!</span>
+		</davinci-callout>
+		<davinci-callout id="Callout2" type="success">
+			<span>Whoooohoo! You got it!</span>
+		</davinci-callout>
+	</layout-column>
+	<davinci-checkbox id="Checkbox1">
+		<span>Check me!</span>
+	</davinci-checkbox>
+		<davinci-checkbox id="Checkbox2">
+		<span>Check me!</span>
+	</davinci-checkbox>
+		<layout-column id="ColumnLayout2" style="flex-wrap:wrap">
+		<davinci-collapse id="Collapse1" collapsed-title="Show" expanded-title="Hide" style="align-self:baseline" open>
+			<davinci-callout id="Callout5" type="info">
+			<span>I am only shown if collapse is expanded!</span>
+		</davinci-callout>
+			
+	</davinci-collapse>
+		<davinci-collapse id="Collapse2" collapsed-title="Show" expanded-title="Hide">
+		</davinci-collapse>
+	</layout-column>
+	
+	<davinci-drop-down id="DropDown1" value="Option1">
+		<davinci-option id="Option6">
+			<span>general Option</span>
+		</davinci-option>
+		<davinci-option-group id="OptionGroup1" label="Group1">
+			<davinci-option id="Option1">
+				<span>Option1</span>
+			</davinci-option>
+			<davinci-option id="Option2">
+				<span>Option2</span>
+			</davinci-option>
+			<davinci-option id="Option3">
+				<span>Option3</span>
+			</davinci-option>
+		</davinci-option-group>
+		<davinci-option-group id="OptionGroup2" label="Group2">
+			<davinci-option id="Option4">
+				<span>Option4</span>
+			</davinci-option>
+			<davinci-option id="Option5">
+				<span>Option5</span>
+			</davinci-option>
+		</davinci-option-group>
+	</davinci-drop-down>
+	
+  
+</layout-row>

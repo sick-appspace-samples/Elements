@@ -1,0 +1,68 @@
+<layout-row id="RowLayout1">
+		<layout-column id="ColumnLayout1">
+				<h6 id="Heading61">NumericField, Type outline</h6>
+		<davinci-numeric-field id="NumericField1" type="outline" max="+Infinity" ticks="1" group-separator="," decimal-separator="." format-pattern="0">
+	</davinci-numeric-field>
+		<h6 id="Heading62">NumericField, Type outline-alt</h6>
+		<davinci-numeric-field id="NumericField2" type="outline-alt" max="+Infinity" ticks="1" group-separator="," decimal-separator="." format-pattern="0">
+		</davinci-numeric-field>
+	</layout-column>
+	
+		<layout-column id="ColumnLayout2">
+				<davinci-progress-line id="ProgressLine2" percentage="50" label="Label text" message="Message text">
+			<span>data-content</span>
+		</davinci-progress-line>
+		<davinci-progress-line id="ProgressLine1" label="Label text">
+			<span>data-content</span>
+      <local-binding property="percentage" name="updatedProgress" init="42"></local-binding>
+		</davinci-progress-line>
+		<davinci-slider id="Slider2" min="0" max="100" ticks="1" legend value="42">
+			<span>Slider</span>
+      <local-binding event="input" name="updatedProgress"></local-binding>
+		</davinci-slider>
+	</layout-column>
+		<layout-column id="ColumnLayout3">
+		<davinci-radio-button id="RadioButton1">
+		<span>RadioButton</span>
+	</davinci-radio-button>
+		<davinci-radio-button id="RadioButton2" checked>
+			<span>RadioButton checked</span>
+		</davinci-radio-button>
+		<davinci-radio-button id="RadioButton3" disabled>
+			<span>RadioButton disabled</span>
+		</davinci-radio-button>
+		<davinci-radio-button id="RadioButton4" checked disabled>
+			<span>RadioButton checked and disabled</span>
+		</davinci-radio-button>
+	</layout-column>
+	
+		<layout-column id="ColumnLayout4">
+		<davinci-range-slider id="RangeSlider1" min="0" max="100" ticks="1">
+		<span>data-content rangeSlider</span>
+	</davinci-range-slider>
+		<davinci-range-slider id="RangeSlider2" min="-100" max="100" ticks="1" legend>
+			<span>data-content rangeSlider</span>
+		</davinci-range-slider>
+	</layout-column>
+	
+		<layout-column id="ColumnLayout5">
+				<davinci-slider id="Slider3" min="0" max="100" ticks="1">
+			<span>data-content slider</span>
+		</davinci-slider>
+		<davinci-slider id="Slider1" min="0" max="100" ticks="1" icon-right="av/volume_up" icon-left="av/volume_down">
+		<span>data-content slider</span>
+	</davinci-slider>
+	</layout-column>
+	
+		<layout-column id="ColumnLayout6">
+		
+		<davinci-spinner id="Spinner2" label="label spinner below" below>
+			<span>Spinner</span>
+		</davinci-spinner>
+		<davinci-spinner id="Spinner1" label="label spinner">
+		<span>Spinner</span>
+	</davinci-spinner>
+	</layout-column>
+	
+  
+</layout-row>

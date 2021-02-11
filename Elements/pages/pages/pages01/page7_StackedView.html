@@ -1,0 +1,59 @@
+<layout-row id="RowLayout1">
+	<layout-column id="ColumnLayout1">
+      <h2>Stacked view with local bindings</h2>
+				<davinci-toggle-group id="ToggleGroup1" value="1">
+			<davinci-radio-button id="RadioButton1" value="1">
+				<span>Pane 1</span>
+			</davinci-radio-button>
+			<davinci-radio-button id="RadioButton2" value="2">
+				<span>Pane 2</span>
+			</davinci-radio-button>
+			<davinci-radio-button id="RadioButton3" value="3">
+				<span>Pane 3</span>
+			</davinci-radio-button>
+			<local-binding event="change" name="selectedPane" auto-commit></local-binding>
+		</davinci-toggle-group>
+		<stacked-view id="StackedView1">
+			<stacked-pane id="StackedPane1" value="1">
+        <h3>Pane 1</h3>
+			</stacked-pane>
+			<stacked-pane id="StackedPane2" value="2">
+        <h3>Pane 2</h3>
+			</stacked-pane>
+			<stacked-pane id="StackedPane3" value="3">
+        <h3>Pane 3</h3>
+			</stacked-pane>
+			<local-binding property="value" name="selectedPane" update-on-resume></local-binding>
+		</stacked-view>
+	</layout-column>
+	<layout-column id="ColumnLayout2">
+      <h2>Stacked view with script bindings</h2>
+				<davinci-toggle-group id="ToggleGroup2" value="1">
+			<davinci-radio-button id="RadioButton4" value="1">
+				<span>Pane 1</span>
+			</davinci-radio-button>
+			<davinci-radio-button id="RadioButton5" value="2">
+				<span>Pane 2</span>
+			</davinci-radio-button>
+			<davinci-radio-button id="RadioButton6" value="3">
+				<span>Pane 3</span>
+			</davinci-radio-button>
+			<crown-binding event="change" name="Elements/setSelection" path="param/args/selection" auto-commit></crown-binding>
+			<crown-edpws-binding property="value" name="Elements/OnSelection" update-on-resume></crown-edpws-binding>
+			<crown-binding property="value" name="Elements/getSelection" path="result/data/selection" auto-update="0" update-on-resume></crown-binding>
+		</davinci-toggle-group>
+		<stacked-view id="StackedView2">
+      <crown-edpws-binding property="value" name="Elements/OnSelection" update-on-resume></crown-edpws-binding>
+			<crown-binding property="value" name="Elements/getSelection" path="result/data/selection" auto-update="0" update-on-resume></crown-binding>
+			<stacked-pane id="StackedPane4" value="1">
+        <h3>Pane 1</h3>
+			</stacked-pane>
+			<stacked-pane id="StackedPane5" value="2">
+        <h3>Pane 2</h3>
+			</stacked-pane>
+			<stacked-pane id="StackedPane6" value="3">
+        <h3>Pane 3</h3>
+			</stacked-pane>
+		</stacked-view>
+	</layout-column>
+</layout-row>
