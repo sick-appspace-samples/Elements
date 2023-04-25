@@ -17,7 +17,7 @@ Page 1:
 
 Page 2:
 * DynamicImage element - the element connects to the script via a binding and displays a png image encoded in the Base64 format
-* DynamicTable element - the table connects to the script via a binding and fetches the data encoded in json 
+* DynamicTable element - the table connects to the script via a binding and fetches the data encoded in json
 * FileDownloadButton - downloads a static resource upon clicking
 * FileUploadButton - uploads a chosen file to a pre-set location on a device
 * Icon element - shows chosen icon from *material* collection
@@ -49,12 +49,15 @@ Page 7:
 * Two StackedView layout elements - including 3 options each. One using local bindings and the second StackedView using function and event bindings to get their states.
 
 ### How to Run
+
 This sample can be run on the Emulator or on a device. After starting, the user interface can be displayed in the DevicePage tab in SICK AppStudio or by using a web browser.
 The language can then be changed in the settings page of the UI.
 To display all UI elements correctly, SICK AppStudio version >= 3.3.0 is recommended.
 
-### More Information:
+### More Information
+
 See UI-Builder tutorial for more information.
 
 ### Topics
-System, User-Interface, Sample, SICK-AppSpace
+
+system, user-interface, sample, sick-appspace
