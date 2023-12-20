@@ -1,7 +1,7 @@
 -- Importing third party json module
 local json = require('json')
 
---@getDynamicTableData():string
+---@return string jsonstring
 local function getDynamicTableData()
   local data = {
     {

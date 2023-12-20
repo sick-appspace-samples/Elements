@@ -2,14 +2,14 @@ local selection = "1"
 
 Script.serveEvent("Elements.OnSelection", "OnSelection")
 
---@setSelection(selection:string):
+---@param selection string
 local function setSelection(s)
   selection = s
   Script.notifyEvent("OnSelection", selection)
 end
 Script.serveFunction("Elements.setSelection", setSelection)
 
---@getSelection():string
+---@return string selection
 local function getSelection()
   return selection
 end
